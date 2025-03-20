@@ -10,7 +10,7 @@ public class Ex1_Scanner {
 		// int n = 100;
 		
 		// java.util패키지에 있는 Scanner클래스를 이용해야한다.
-		// 다른 패키지에 잇는 기능을 사용하기 위해서는 import를 해야 한다.
+		// 다른 패키지에 있는 기능을 사용하기 위해서는 import를 해야 한다.
 		// import 경로
 		// let obj = new Object(); => JS에서의 생성자
 		// obj.key = value; // 프로퍼티가 없으면 추가
