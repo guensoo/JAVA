@@ -1,6 +1,6 @@
 package ex03_variable;
 
-public class Ex1_variable {
+public class Ex01_variable {
 	public static void main(String[] args) {
 		// 변수
 		// 프로그램을 만들고 실행하는데 필요한 값들을

@@ -2,7 +2,7 @@ package ex05_Scanner;
 
 import java.util.Scanner;
 
-public class Ex1_Scanner {
+public class Ex01_Scanner {
 	public static void main(String[] args) {
 		// 데이터의 입력
 		// 프로그램을 실행할 때 키보드를 통해 입력한 데이터를

@@ -53,7 +53,7 @@ public class Ex03_Operator {
 		int i2 = 15;
 		result = ++i >= i2 ? 1 : 0;
 		System.out.println("result : " + result); // 0
-		
+		// -------------------------------------------------------------------------
 		// x = 6
 		// y = 5
 		x = 5;
@@ -72,6 +72,7 @@ public class Ex03_Operator {
 		System.out.println("y의 값 : " + y);
 		System.out.println("z의 값 : " + z);
 		
+		// result = ++a >= b || 2 + 7 <= b && 13 - b >= 0 && (a += b) - (a % b) > 10 ? 1 : 0;
 		// 11 >= 12 || 9 <= 12 && 1 >= 0 && 22 - 12 > 10;
 		// f || t && t && t;
 		// true
@@ -101,7 +102,7 @@ public class Ex03_Operator {
 		
 		 if (result == 1) { System.out.println("결과는 합격입니다."); }
 		 else { System.out.printf("결과는 불합격입니다."); }
-		
+		 
 	}
 
 }

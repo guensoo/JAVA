@@ -1,6 +1,6 @@
 package ex01_print;
 
-public class Ex1_print {
+public class Ex01_print {
 	public static void main(String[] args) {
 		
 		// 자바에서 문자열은 반드시 ""안에 넣어야 한다.
