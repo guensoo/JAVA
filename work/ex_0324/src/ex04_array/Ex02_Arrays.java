@@ -130,9 +130,7 @@ public class Ex02_Arrays {
 		
 		System.out.println(iArr2[0]);
 		
-		// 로또번호 생성하기
-		// 1 ~ 45 사이의 난수를 발생시켜 로또번호를
-		// 생성하는 프로그래 만들기
+		
 		
 	}
 }

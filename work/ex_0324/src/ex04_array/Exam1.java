@@ -190,7 +190,23 @@ public class Exam1 {
 //			money %= coin[i];
 //		}
 		
-		
+		// 로또번호 생성하기
+		// 1 ~ 45 사이의 난수를 발생시켜 로또번호를
+		// 생성하는 프로그램 만들기
+		Random rand = new Random();
+		int rd = rand.nextInt(45)+1;
+		int [] iArr1 = new int[6];
+		reset:for(int i = 0; i < iArr1.length;) {
+			iArr1[i] = rd;
+			System.out.println(iArr[i]);
+			for(int j = 0; j < iArr1.length -1 -i;) {
+				if(iArr1[i] == iArr[j]) {
+					continue reset;  
+				}
+				j++;
+			}
+			i++;
+		}
 		
 		
 		
