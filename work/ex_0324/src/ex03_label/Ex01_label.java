@@ -1,6 +1,6 @@
 package ex03_label;
 
-public class Ex03_label {
+public class Ex01_label {
 	public static void main(String[] args) {
 		// label
 		// 기타제어문을 포함하고 있는 반복문에 대해서만

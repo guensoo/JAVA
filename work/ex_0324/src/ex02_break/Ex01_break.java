@@ -1,6 +1,6 @@
 package ex02_break;
 
-public class Ex02_break {
+public class Ex01_break {
 	public static void main(String[] args) {
 		// break문은 switch를 할 때 나왔던 구문으로
 		// case를 종료할 때 사용
