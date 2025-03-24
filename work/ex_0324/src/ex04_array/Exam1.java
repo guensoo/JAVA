@@ -55,6 +55,8 @@ public class Exam1 {
 		}
 		System.out.println(max);
 		
+		
+		// TODO 최소값 다시풀어보기
 		for(int i = 1; i < nums.length;i++) {
 			for(int j = 0; j < nums[i]; j++) {
 				if(nums[i] < min) {
@@ -71,6 +73,7 @@ public class Exam1 {
 //		}
 		
 		System.out.println("-----------------------------");
+		// TODO 다시 풀어보기
 		int[] nums2 = {1, 2 ,1, 3, 2, 1, 4};
 		// 위 배열에서 각 숫자가 몇 번 나왔는지 출력하시오
 		// 1 : 3번
@@ -105,7 +108,7 @@ public class Exam1 {
 		
 		max = 0;
 		
-		
+		// TODO 다시 풀어보기
 		// 1. 버블정렬
 		// 인접한 두 요소를 비교해 큰 값을 뒤로 보내는 정렬 방식
 		for(int i = 0; i < nums3.length; i++) {
@@ -128,7 +131,7 @@ public class Exam1 {
 			
 		}
 		System.out.println(myWorld);
-		
+		// TODO 다시 풀어보기
 		// 키보드에서 배열의 길이를 입력받는다.
 		// 입력받은 배열의 길이만큼 알파벳을 넣고 출력한다.
 		// 배열의 길이 : 5
@@ -146,7 +149,7 @@ public class Exam1 {
 			System.out.print(c);
 			c++;
 		}
-		
+		// TODO 다시 풀어보기
 		// 동전의 개수 구하기
 		// 10 ~ 5000 사이의 난수를 변수에 담는다
 		// 1의 자리는 반드시 0이 되도록 한다.
