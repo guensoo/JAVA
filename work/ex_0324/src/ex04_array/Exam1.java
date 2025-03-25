@@ -198,10 +198,9 @@ public class Exam1 {
 		// 로또번호 생성하기
 		// 1 ~ 45 사이의 난수를 발생시켜 로또번호를
 		// 생성하는 프로그램 만들기
-		Random rand = new Random();
 		int [] iArr1 = new int[6];
-		reset:for(int i = 0; i < iArr1.length;) {
-			iArr1[i] = rand.nextInt(45)+1;
+		reset:for(int i = 0; i < iArr1.length;) { 
+			iArr1[i] = r.nextInt(45)+1;
 			for(int j = 0; j < i; j++) {
 				if(iArr1[i] == iArr[j]) {
 					continue reset;
@@ -210,6 +209,29 @@ public class Exam1 {
 			i++;
 		}
 		System.out.println(Arrays.toString(iArr1));
+		
+		
+		// 로또번호 생성기
+		// 1. 1 ~ 45사이의 난수를 추출한다.
+		// 2. 배열에 넣는다.
+		// 3. 배열의 다른 값들과 비교하여 중복되면 다시 뽑는다.
+		
+		int [] lotto = new int[6];
+		outer:for(int i = 0; i < lotto.length;) {
+			lotto[i] = r.nextInt(45)+1; // 난수 생성하여 배열에 넣기
+			// 배열에서 중복값을 찾는 반복문
+			for(int j = 0; j < i; j++) {
+				if(lotto[i] == lotto[j]) {
+					continue outer;
+				}
+				
+			}
+			System.out.println(lotto[i] + " ");
+			i++;
+			
+		}
+		
+		
 		
 	}
 }
