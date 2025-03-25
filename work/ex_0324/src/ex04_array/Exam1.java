@@ -204,7 +204,7 @@ public class Exam1 {
 			iArr1[i] = rand.nextInt(45)+1;
 			for(int j = 0; j < i; j++) {
 				if(iArr1[i] == iArr[j]) {
-					continue reset;  
+					continue reset;
 				}
 			}
 			i++;
