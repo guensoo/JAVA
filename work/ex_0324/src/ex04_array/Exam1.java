@@ -1,5 +1,6 @@
 package ex04_array;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -170,16 +171,20 @@ public class Exam1 {
 		for(int i = 0; i < coin.length;) {
 			System.out.println("금액 : " + money);
 			int five = money / coin[i];
+			money = money % coin[i];
 			i++;
 			int hund = money / coin[i];
+			money = money % coin[i];
 			i++;
 			int fift = money / coin[i];
+			money = money % coin[i];
 			i++;
 			int ten = money / coin[i];
-			System.out.println("필요한 돈 오백원 : " + five % 500);
-			System.out.println("필요한 돈 백원 : "+ hund % 100);
-			System.out.println("필요한 돈 오십원 : "+ fift % 50);
-			System.out.println("필요한 돈 십원 : " + ten % 10);
+			money = money % coin[i];
+			System.out.println("필요한 돈 오백원 : " + five);
+			System.out.println("필요한 돈 백원 : "+ hund);
+			System.out.println("필요한 돈 오십원 : "+ fift);
+			System.out.println("필요한 돈 십원 : " + ten);
 			break;
 		}
 		
@@ -194,21 +199,17 @@ public class Exam1 {
 		// 1 ~ 45 사이의 난수를 발생시켜 로또번호를
 		// 생성하는 프로그램 만들기
 		Random rand = new Random();
-		int rd = rand.nextInt(45)+1;
 		int [] iArr1 = new int[6];
 		reset:for(int i = 0; i < iArr1.length;) {
-			iArr1[i] = rd;
-			System.out.println(iArr[i]);
-			for(int j = 0; j < iArr1.length -1 -i;) {
+			iArr1[i] = rand.nextInt(45)+1;
+			for(int j = 0; j < i; j++) {
 				if(iArr1[i] == iArr[j]) {
 					continue reset;  
 				}
-				j++;
 			}
 			i++;
 		}
-		
-		
+		System.out.println(Arrays.toString(iArr1));
 		
 	}
 }
