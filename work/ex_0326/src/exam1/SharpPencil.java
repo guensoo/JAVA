@@ -1,20 +1,21 @@
 package exam1;
 
-import java.util.Scanner;
-
 public class SharpPencil extends Pen { // 샤프펜
-	public SharpPencil () {
-		getAmount()
-		getColor()
+	private int width; //펜의 굵기
+	@Override
+		public int getAmount() {
+			// TODO Auto-generated method stub
+			return super.getAmount();
+		}
+	@Override
+		public void setAmount(int amount) {
+			// TODO Auto-generated method stub
+			super.setAmount(amount);
+		}
+	public int getWidth() {
+		return width;
 	}
-	
-	
-	
-	
-
-		Sharp.getAmount();
-		Sharp.setAmount(x);
+	public void setWidth(int width) {
+		this.width = width;
 	}
-	
-
 }
