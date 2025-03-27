@@ -1,12 +1,16 @@
 package ex04_exam;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Graph {
 	public static void main(String[] args) {
 		PrintGraph print = new PrintGraph();
 		Random rand = new Random();
+		int rnum = rand.nextInt();
 		int[] arr = new int[100];
+		
+		
 		print.PrintGraph(arr);
 		
 	// Graph라는 이름의 메인 클래스를 만들어 
@@ -26,7 +30,23 @@ public class Graph {
 	//  7의 갯수 : ############# 13
 	//  8의 갯수 : ####### 7
 	//  9의 갯수 : ########## 10
-	
-	
+		int[] num = new int[100]; // 난수를 담을 배열
+		
+		int[] count = new int[10]; // 생성된 난수의 개수를 담을 배열
+		
+		// 100개의 공간에 난수를 할당
+		for(int i = 0; i < num.length; i++) {
+			num[i] = rand.nextInt(10);
+		}
+		
+		for(int i = 0; i < num.length; i++) {
+			count[num[i]]++;
+		}
+		
+		PrintGraph pg = new PrintGraph();
+		for(int i = 0; i < count.length; i++) {
+			System.out.printf("%d의 개수 : %s %d", i, pg.print('#', count[i]), count[i]);
+		}
+		System.out.println(Arrays.toString(count));
 	}
 }
