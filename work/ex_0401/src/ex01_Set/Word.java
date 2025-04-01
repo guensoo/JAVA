@@ -14,14 +14,14 @@ public class Word {
 		System.out.print("문장을 입력해주세요 : ");
 		String input = sc.nextLine();
 		
-		String[] words = input.split(" ");
+		String[] words = input.split(" ");//"I love Java I love coding
 		
 		HashSet<String> wordSet = new HashSet<String>();
 		
 		boolean hasDuplicate = false;
 		
 		// boolean add(E e)
-		// 잘 들어갔으면 truem 중복되면 false를 반환
+		// 잘 들어갔으면 true 중복되면 false를 반환
 		for(String word : words) {
 			if(!wordSet.add(word)) {
 				hasDuplicate = true;
