@@ -14,7 +14,7 @@ public class Word {
 		System.out.print("문장을 입력해주세요 : ");
 		String input = sc.nextLine();
 		
-		String[] words = input.split(" ");//"I love Java I love coding
+		String[] words = input.split(" ");//"I love Java I love coding"
 		
 		HashSet<String> wordSet = new HashSet<String>();
 		

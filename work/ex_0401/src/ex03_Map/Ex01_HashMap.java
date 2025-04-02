@@ -54,5 +54,13 @@ public class Ex01_HashMap {
 		// map안에 key가 존재하면 true, 없으면 false
 		// containsValue(V v)
 		// map안에 value가 존재하면 true, 없으면 false
+		
+		Iterator<String> iter = 
+		map3.keySet().iterator();
+		
+		// Entry
+		// HashMap 내부에서 key-value쌍 하나를 표현할 수 있는 객체
+		
+		
 	}
 }
