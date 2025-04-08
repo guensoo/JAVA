@@ -11,8 +11,20 @@ public class DaemonMain {
 		// 데몬 스레드로 설정한다.
 		daemonThread.setDaemon(true);
 		
+		// 데몬 스레드 시작
+		daemonThread.start();
 		
+		// 메인 스레드에서 1부터 15까지 출력
+		for(int i = 1; i <= 15; i++) {
+			System.out.println(i);
+			try {
+				Thread.sleep(1000);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+		}
 		
+		System.out.println("메인 스레드 종료");
 		
 		
 	}
