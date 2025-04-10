@@ -10,8 +10,10 @@ public class OrderStatusMain {
 			System.out.println("현재 상태 : " + status);
 			status = status.next();
 			System.out.println("현재 상태 : " + status);
+			status = status.next();
 		} catch (Exception e) {
 			// TODO: handle exception
+			System.out.println(e.getMessage());
 		}
 		
 	}

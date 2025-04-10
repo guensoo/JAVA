@@ -18,7 +18,8 @@ public enum OrderStatus {
 	      }
 	   };
 	   
-	abstract OrderStatus next() throws Exception;
+	   abstract OrderStatus next() throws Exception;
+	
 	
 }
 	// 온라인 쇼핑몰의 주문상태를 관리하는 시스템을 만들고자 한다.
