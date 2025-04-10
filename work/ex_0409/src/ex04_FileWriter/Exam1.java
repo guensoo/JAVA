@@ -2,6 +2,10 @@ package ex04_FileWriter;
 
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Exam1 {
@@ -25,28 +29,59 @@ public class Exam1 {
 		FileWriter fw = null;
 		Scanner sc = new Scanner(System.in);
 		String chat;
+		List<String> lines = new ArrayList<>();
 		
 		try {
 			System.out.println("메모 입력 (exit 입력 시 종료):");
+			fw = new FileWriter("C:\\Users\\admin\\Desktop\\AWS_cgs\\JAVA\\memo.txt");
 			while(true) {
-				fw = new FileWriter("C:\\Users\\admin\\Desktop\\AWS_cgs\\JAVA\\memo.txt");
-				
 				chat = sc.nextLine();
 				
 				if(chat.equals("exit")) {
 					fw.close();
 					break;
 				}
-				fw.write(chat);
+				lines.add(chat);
+				fw.write(chat+'\n');
 			}
 			int code = 0;
 			fr = new FileReader("C:\\Users\\admin\\Desktop\\AWS_cgs\\JAVA\\memo.txt");
-			System.out.println("저장 완료. 저장된 메모 내용:");
+			System.out.print("저장 완료.\n저장된 메모 내용:\n");
 			while((code = fr.read()) != -1) {
 				System.out.print((char)code);
 			}
+			
+			Map<String, Integer> wordCount = new HashMap<>();
+			
+			for(String line : lines) {
+				String[] words = line.toLowerCase().split(" ");
+				for(String word : words) {
+					if(word.isEmpty())continue;
+					wordCount.put(word,  wordCount.getOrDefault(wordCount, 0)+1);
+				}
+			}
+			// result.txt에 저장
+			try {
+		         fw = new FileWriter("D:\\full_stack_lhj\\3.JAVA\\result.txt");
+		         for(Map.Entry<String, Integer> entry : wordCount.entrySet()) {
+		            fw.write(entry.getKey() + " : " + entry.getValue());
+		         }
+		         System.out.println("단어 빈도수 저장 완료");
+		         fw.close();
+			} catch (Exception e) {
+		         // TODO: handle exception
+		      }
+
 		} catch (Exception e) {
 			// TODO: handle exception
+		} finally {
+			try {
+				if(fw != null) {
+					fw.close();
+				}
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
 		}
 	}
 }

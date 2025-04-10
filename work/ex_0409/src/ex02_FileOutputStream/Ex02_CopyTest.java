@@ -11,7 +11,7 @@ public class Ex02_CopyTest {
 		
 		try {
 			fis = new FileInputStream("C:\\Users\\admin\\Desktop\\AWS_cgs\\JAVA\\wall.jpg");
-			fos = new FileOutputStream("C:\\Users\\admin\\Desktop\\AWS_cgs\\JAVA\\wall_copy.jpg");
+			fos = new FileOutputStream("C:\\Users\\admin\\Desktop\\AWS_cgs\\JAVA\\wall_copy.jpg", true);
 			
 			// 현재 시간을 m/s단위로 나타냄
 			long start = System.currentTimeMillis();

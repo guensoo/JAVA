@@ -1,6 +1,7 @@
 package ex02_FileOutputStream;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
@@ -72,7 +73,7 @@ public class Exam1 {
 			// 복호화를 해서 콘솔에 출력하기
 			File f = new File("C:\\\\Users\\\\admin\\\\Desktop\\\\AWS_cgs\\\\JAVA\\\\score.txt");
 			FileInputStream fis = null;
-			byte[] buffer
+			// byte[] buffer
 			
 		} catch (Exception e) {
 			// TODO: handle exception
