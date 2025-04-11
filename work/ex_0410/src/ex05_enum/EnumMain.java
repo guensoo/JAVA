@@ -1,6 +1,7 @@
 package ex05_enum;
 
 import java.util.Arrays;
+import java.util.Calendar;
 
 public class EnumMain {
 	public static void main(String[] args) {
@@ -53,7 +54,7 @@ public class EnumMain {
 		
 		for(Item item : items) {
 			System.out.println(item.getItemStr());
-		}
+		} 
 		
 		// 왜 enum을 써야 할까??
 		// 1. 코드의 가독성을 증가
@@ -67,5 +68,9 @@ public class EnumMain {
 		// 단 우리가 설정한 색의 범주가 아님
 		
 		Color color1 = Color.RED; // Color타입만 들어올 수 있다.
+		
+		// 생성자를 직접 호출하는 것이 아닌 getInstance()라는 메서드를 통해
+		// 이미 만들어진 객체를 불러올 수 있다.
+		Calendar cal = Calendar.getInstance();
 	}
 }
