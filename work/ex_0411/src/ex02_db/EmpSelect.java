@@ -15,7 +15,7 @@ public class EmpSelect {
 		for (Person p : person) {
 			System.out.printf("사번 : %d, 이름 : %s, 나이 : %d\n", p.getIdx(), p.getName(), p.getAge());
 		}
-//		PersonMethod.add(4, "감스트", 50);
+		PersonMethod.add(4, "김길동", 50);
 
 	}
 }

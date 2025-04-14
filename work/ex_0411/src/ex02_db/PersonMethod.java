@@ -62,7 +62,7 @@ public class PersonMethod {
 			pstmt.setString(2, name);
 			pstmt.setInt(3, age);
 			rs = pstmt.executeQuery();
-
+ 
 			System.out.println("추가 성공");
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -84,3 +84,7 @@ public class PersonMethod {
 		}
 	}
 }
+// Parent p1 = new A();
+// Parent p2 = new B();
+// Parent p3 = new C();
+// Parent p4 = new D();
