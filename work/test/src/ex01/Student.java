@@ -11,4 +11,15 @@ public class Student {
 		this.age = age;
 		this.id = id;
 	}
+	
+	// 4. 25.(금) 시험 후
+	// 메서드 왜 안만들었니 근수근수야...........
+	public String info() {
+		return "이름: " + name + ", 나이: " + age + ", ID: " + id;
+	}
+	
+	// 또는 
+	public void studentInfo() {
+	    System.out.printf("이름 : %s, 나이 : %d, 학번 : %d", name, age, id);
+	}
 }

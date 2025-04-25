@@ -18,7 +18,7 @@ public class Main extends Exam{
 		
 		// 6. '학생' 클래스를 작성하고, '이름', '나이', '학번'을 인스턴스 변수로 가지며 이를 출력하는 메서드를 작성하세요.
 		Student student = new Student("홍길동", 24, 1223);
-		System.out.printf("이름 : %s, 나이 : %d, 학번 : %d\n",student.name, student.age, student.id);
+		System.out.println(student.info());
 		
 		// 7. Map을 사용하여 주어진 단어들의 빈도를 계산하는 메서드를 작성하고 결과를 출력하세요
 		// - 주어진 문장
